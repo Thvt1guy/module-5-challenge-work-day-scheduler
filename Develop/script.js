@@ -32,12 +32,17 @@ $(function () {
   // current hour in 24-hour time?
   function time() {
     var currentHour =  dayjs().hour();
-    $('.time-block').each(function (index, value){
+    $('.time-block').each(function (){
       var timeBlockId = $(this).attr('id');
+
       console.log(timeBlockId);
+      console.log(Number(timeBlockId));
+
       if (timeBlockId < currentHour) {
         timeBlockId.addClass('past');
+        console.log('if statement is true.');
       }
+      // need to get the numbers only for each id, go through every string method
       //figure out how to convert string to integers
       //when its transfered to integers
 
@@ -52,3 +57,4 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
