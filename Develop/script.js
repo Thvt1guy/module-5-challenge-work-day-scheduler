@@ -64,27 +64,38 @@ $(function () {
   }
   time();
 
-  function saveText(){
+  function loadText(){
     var key2 = $('.saveBtn').parent().attr('id');
     // var myId = $('.saveBtn');
     // var myClass = $(key2 + '.description');
 
 
-
-    var storage = localStorage.getItem(key2);
-    $('#hour-9 .description').html(storage);
-    $('#hour-10 .description').html(storage);
-    $('#hour-11 .description').html(storage);
-    $('#hour-12 .description').html(storage);
-    $('#hour-13 .description').html(storage);
-    $('#hour-14 .description').html(storage);
-    $('#hour-15 .description').html(storage);
-    $('#hour-16 .description').html(storage);
-    $('#hour-17 .description').html(storage);
     console.log(key2);
+    var listEl = $('.time-block');
+    // console.log(listEl);
+    listEl.each(function () {
+      var storedId = this.id
+      console.log(storedId);
+      var storage = localStorage.getItem(storedId);
+      console.log(storage);
+
+      $(`#${storedId} .description`).html(storage);
+
+    });
+
+    // $('#hour-9 .description').html(storage);
+    // $('#hour-10 .description').html(storage);
+    // $('#hour-11 .description').html(storage);
+    // $('#hour-12 .description').html(storage);
+    // $('#hour-13 .description').html(storage);
+    // $('#hour-14 .description').html(storage);
+    // $('#hour-15 .description').html(storage);
+    // $('#hour-16 .description').html(storage);
+    // $('#hour-17 .description').html(storage);
     // console.log(JSON.stringify(myClass));
   }
-  saveText();
+
+  loadText();
 
 
   // function getUserInput() {
