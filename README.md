@@ -2,7 +2,7 @@
 # Module 05 Challenge Work Day Scheduler
 ## -->[Link to the Deployed page](https://thvt1guy.github.io/module-5-challenge-work-day-scheduler/)<--
 
-![image](./module-4-challenge-timed-quiz/Assets/Images/websiteImage.png)
+![Webpage Image](./Assets/Images/WebpageImage.png)
 
 ## Starter Code Provided
 - Enter desired note into text field
@@ -14,7 +14,7 @@
 - 9-5 workday planned
 
 ## WEBSITE PAGE GIF
-![Timed-Quiz-webpage-gif](./Assets/gifs/Timed%20Coding%20Quiz.gif)
+![Timed-Quiz-webpage-gif](./Assets/gifs/Work%20Day%20Scheduler.gif)
 ## HTML FILE IMAGE
 ![Index HTML file screenshot](./Assets/Images/HTML.PNG)
 ## CSS FILE IMAGE
